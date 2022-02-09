@@ -2,28 +2,24 @@
 
 " use strict";
 
-// const category = 'toys';
+const numberOfFilms = +prompt('Сколько фильмов Вы уже посмотрели?', '');
 
-// console.log(category);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false, 
+};
+
+const a = prompt('Один из последних просмотренныъ фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренныъ фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
 
-// const user = 'Timur';
-// alert(`Привет, ${user}`);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-// console.log('arr' + "- object")
 
-let incr = 10,
-    decr = 10;
-
-incr++;
-decr--;
-
-console.log(incr);
-console.log(decr);
-
-console.log(2 + 2 * 2 === 8);
-
-const isChecked = false,
-      isClose = true;
-
-console.log(isChecked || !isClose);
+console.log(personalMovieDB);
